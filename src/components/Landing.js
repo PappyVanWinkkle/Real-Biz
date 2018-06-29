@@ -24,7 +24,7 @@ const Landing = () => {
 							<span className="icon-bar" /> <span className="icon-bar" />{' '}
 						</button>
 						<a className="navbar-brand page-scroll" href="#page-top">
-							REAL HOMES
+							REAL BIZ
 						</a>{' '}
 					</div>
 					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,7 +42,7 @@ const Landing = () => {
 			<div id="about">
 				<div className="container">
 					<div className="section-title text-center center">
-						<h2>Your New home begins here</h2>
+						<h2>Your New Business search beigns here</h2>
 						<hr />
 					</div>
 					<div className="row">
@@ -52,10 +52,10 @@ const Landing = () => {
 						</div>
 						<div className="col-xs-12 col-md-6">
 							<div className="about-text">
-								<h3>UK properties</h3>
+								<h3>Business around the World</h3>
 								<p>
-									With extensive properties around the country, Real / Homes is the only place to find
-									that perfect home or nest egg.
+									With extensive businesses around the country, Real / BIZ is the only place to find
+									that perfect business or establishment for your needs from Hotels to Schools
 								</p>
 							</div>
 						</div>
