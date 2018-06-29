@@ -13,13 +13,13 @@ const Header = () => {
 						<div className="row">
 							<div className="intro-text">
 								<h1>
-									<strong>REAL / BIZ</strong>
+									<strong>REAL / FOOD</strong>
 								</h1>
 								<input
 									type="text"
 									className="form-control"
-									placeholder="Search by City or Postcode"
-									aria-label="Search by City or Postcode"
+									placeholder="Search by Dish or Meal"
+									aria-label="Search by Dish or Meal"
 									aria-describedby="basic-addon2"
 								/>
 							</div>

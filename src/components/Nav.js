@@ -21,7 +21,7 @@ const Nav = () => {
 							<span class="icon-bar" /> <span class="icon-bar" />{' '}
 						</button>
 						<a className="navbar-brand page-scroll" href="#page-top">
-							REAL HOMES
+							REAL FOOD
 						</a>{' '}
 					</div>
 					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

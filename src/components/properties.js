@@ -9,9 +9,9 @@ const Properties = () => {
 		<div id="portfolio">
 			<div className="container">
 				<div className="section-title text-center center">
-					<h2>Homes</h2>
+					<h2>Foodz</h2>
 					<hr />
-					<p>Get inspired by looking at our different properties around the country</p>
+					<p>Get inspired by looking at our different recipes awaken the chef in you.</p>
 				</div>
 				{''}
 				<div className="row">
@@ -26,10 +26,12 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>Everyday is a journey and the journey itself is Home</h4>
+											<h4>
+												All you need is love. But a little chocolate now and then doesn't hurt
+											</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/01-small.jpg"
+											src="/real-estate-theme/img/portfolio/food2.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}
@@ -47,12 +49,10 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>
-												It’s home sweet home. It’s where your heart is. It’s where you make it.
-											</h4>
+											<h4>Ask not what you can do for your country. Ask what’s for lunch.</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/02-small.jpg"
+											src="/real-estate-theme/img/portfolio/food3.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}
@@ -70,10 +70,12 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>Home is the starting place of love, hope and dreams.</h4>
+											<h4>
+												After a good dinner one can forgive anybody, even one's own relations.
+											</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/03-small.jpg"
+											src="/real-estate-theme/img/portfolio/food4.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}
@@ -91,10 +93,10 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>There is nothing more important than a good, safe, secure home.</h4>
+											<h4>There is no love sincerer than the love of food.</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/04-small.jpg"
+											src="/real-estate-theme/img/portfolio/food5.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}
@@ -112,10 +114,10 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>Home is not a place…it’s a feeling</h4>
+											<h4>If you're afraid of butter, use cream.</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/05-small.jpg"
+											src="/real-estate-theme/img/portfolio/food6.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}
@@ -133,10 +135,10 @@ const Properties = () => {
 										data-lightbox-gallery="gallery1"
 									>
 										<div className="hover-text">
-											<h4>There’s no place like home.</h4>
+											<h4>All sorrows are less with bread.</h4>
 										</div>
 										<img
-											src="/real-estate-theme/img/portfolio/06-small.jpg"
+											src="/real-estate-theme/img/portfolio/food7.jpg"
 											className="img-responsive"
 											alt="Project Title"
 										/>{' '}

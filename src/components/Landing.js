@@ -24,7 +24,7 @@ const Landing = () => {
 							<span className="icon-bar" /> <span className="icon-bar" />{' '}
 						</button>
 						<a className="navbar-brand page-scroll" href="#page-top">
-							REAL BIZ
+							REAL FOOD
 						</a>{' '}
 					</div>
 					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,20 +42,20 @@ const Landing = () => {
 			<div id="about">
 				<div className="container">
 					<div className="section-title text-center center">
-						<h2>Your New Business search beigns here</h2>
+						<h2>Your New Recipe search beigns here</h2>
 						<hr />
 					</div>
 					<div className="row">
 						<div className="col-xs-12 col-md-6 text-center">
 							{' '}
-							<img src="/real-estate-theme/img/home.jpg" className="img-responsive" alt="" />{' '}
+							<img src="/real-estate-theme/img/food.jpg" className="img-responsive" alt="" />{' '}
 						</div>
 						<div className="col-xs-12 col-md-6">
 							<div className="about-text">
-								<h3>Business around the World</h3>
+								<h3>Delicious food to keep you coming back</h3>
 								<p>
-									With extensive businesses around the country, Real / BIZ is the only place to find
-									that perfect business or establishment for your needs from Hotels to Schools
+									Real Foods is the only place for all your recipe needs. Awaken the chef in you by
+									browsing through the extensive range of recipes for any occasion.
 								</p>
 							</div>
 						</div>
