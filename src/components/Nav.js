@@ -9,7 +9,7 @@ const Nav = () => {
 		<div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 			<nav id="menu" className="navbar navbar-default navbar-fixed-top">
 				<div className="container">
-					<div class="navbar-header">
+					<div className="navbar-header">
 						<button
 							type="button"
 							className="navbar-toggle collapsed"
@@ -17,12 +17,10 @@ const Nav = () => {
 							data-target="#bs-example-navbar-collapse-1"
 						>
 							{' '}
-							<span class="sr-only">Toggle navigation</span> <span class="icon-bar" />{' '}
-							<span class="icon-bar" /> <span class="icon-bar" />{' '}
+							<span className="sr-only">Toggle navigation</span> <span className="icon-bar" />{' '}
+							<span className="icon-bar" /> <span className="icon-bar" />{' '}
 						</button>
-						<a className="navbar-brand page-scroll" href="#page-top">
-							REAL FOOD
-						</a>{' '}
+						<a className="navbar-brand page-scroll" href="#page-top" />MRKET WIZ{' '}
 					</div>
 					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul className="nav navbar-nav navbar-right">

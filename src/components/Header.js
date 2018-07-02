@@ -13,7 +13,7 @@ const Header = () => {
 						<div className="row">
 							<div className="intro-text">
 								<h1>
-									<strong>REAL / FOOD</strong>
+									<strong>MARKET / WIZ</strong>
 								</h1>
 								<input
 									type="text"

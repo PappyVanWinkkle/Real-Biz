@@ -1,7 +1,7 @@
 // combine here
 import { combineReducers } from 'redux';
-import test from './test';
+import money from './moneyReducer';
 
 export default combineReducers({
-	test: test
+	money: money
 });

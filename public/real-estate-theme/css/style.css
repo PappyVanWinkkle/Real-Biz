@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
 	font-family: 'Roboto', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -41,11 +42,13 @@ a {
 	color: #333;
 	font-weight: 400;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
 	text-decoration: none;
 	color: #222;
 }
-ul, ol {
+ul,
+ol {
 	list-style: none;
 }
 .clearfix:after {
@@ -65,7 +68,8 @@ ul, ol {
 .clearfix {
 	display: block;
 }
-ul, ol {
+ul,
+ol {
 	padding: 0;
 	webkit-padding: 0;
 	moz-padding: 0;
@@ -80,13 +84,20 @@ hr {
 	margin-bottom: 20px;
 	border: 0;
 }
-.btn:active, .btn.active {
+.btn:active,
+.btn.active {
 	background-image: none;
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
 	outline: none;
 	outline-offset: none;
 }
@@ -124,19 +135,22 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
 	color: #eee !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
 	background-color: #a7c44c;
 	border-color: #a7c44c;
 }
-.navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #FFF;
+.navbar-default .navbar-toggle:hover > .icon-bar {
+	background-color: #fff;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -157,24 +171,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 20px;
 	transition: all 0.5s;
 }
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	color: rgba(255,255,255,0.8);
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+	color: rgba(255, 255, 255, 0.8);
 	background-color: #94ae44;
 }
-/* Header Section */
+/* Header Section #e5e5e5;*/
 .intro {
 	display: table;
 	width: 100%;
 	padding: 0;
 	background: url(../img/intro-bg.jpg) no-repeat center bottom;
-	background-color: #e5e5e5;
+	background-color: #23292F;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.40);
+	background: rgba(0, 0, 0, 0.40);
 }
 .intro h1 {
 	color: #fff;
@@ -273,12 +291,13 @@ ol.type li a:hover {
 	color: #fff;
 }
 .isotope-item {
-	z-index: 2
+	z-index: 2;
 }
 .isotope-hidden.isotope-item {
-	z-index: 1
+	z-index: 1;
 }
-.isotope, .isotope .isotope-item {
+.isotope,
+.isotope .isotope-item {
 	/* change duration value to whatever you like */
 	-webkit-transition-duration: 0.8s;
 	-moz-transition-duration: 0.8s;
@@ -326,7 +345,7 @@ ol.type li a:hover {
 	transition: all 0.5s;
 	border-radius: 0 50px 0 50px;
 }
-.hover-bg .hover-text>h4 {
+.hover-bg .hover-text > h4 {
 	opacity: 0;
 	color: #333;
 	-webkit-transform: translateY(100%);
@@ -335,7 +354,7 @@ ol.type li a:hover {
 	font-size: 18px;
 	font-weight: 400;
 }
-.hover-bg:hover .hover-text>h4 {
+.hover-bg:hover .hover-text > h4 {
 	opacity: 1;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateY(0);
@@ -354,7 +373,8 @@ ol.type li a:hover {
 	padding: 120px 0;
 	background: rgba(167, 196, 76, 0.9);
 }
-#team h2, #team p {
+#team h2,
+#team p {
 	color: #fff;
 }
 #team hr {
@@ -385,7 +405,7 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 120px 0 60px 0;
-	background: #F6F6F6;
+	background: #f6f6f6;
 }
 #contact form {
 	padding: 30px 0;
@@ -430,16 +450,16 @@ label {
 	box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-color: #777;
+	color: #777;
 }
 .form-control:-moz-placeholder {
-color: #777;
+	color: #777;
 }
 .form-control::-moz-placeholder {
-color: #777;
+	color: #777;
 }
 .form-control:-ms-input-placeholder {
-color: #777;
+	color: #777;
 }
 #contact .contact-item {
 	margin: 20px 0 40px 0;
