@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ListGroup, ListGroupItem, Badge } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
+import { Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import getMarketInformation from '../actions/moneyAction';
 import getMarketNews from '../actions/newsAction';
@@ -23,9 +24,9 @@ class MarketInfo extends Component {
 			<Container>
 				<Row>
 					<Col xs="6" sm="6">
-						{this.props.money.map(function(key, index) {
+						{this.props.money.map(function(key, value) {
 							return (
-								<ListGroup key={index}>
+								<ListGroup key={value}>
 									<ListGroupItem className="justify-content-between">
 										Date <Badge pill>{key.date}</Badge>
 									</ListGroupItem>
@@ -46,7 +47,22 @@ class MarketInfo extends Component {
 						})}
 					</Col>
 					<Col xs="6" sm="6">
-						News
+						<h2>Business News</h2>
+						{this.props.news.map(function(article, value) {
+							return (
+								<div key={value} style={{ background: 'white' }}>
+									<h5>{article.title}</h5>
+									<p>{article.description}</p>
+									<p>{article.author}</p>
+									<p>{article.publishedAt}</p>
+									<div>
+										<a href={`${article.url}`}>
+											<Button color="primary">Read More</Button>{' '}
+										</a>
+									</div>
+								</div>
+							);
+						})}
 					</Col>
 				</Row>
 			</Container>
@@ -57,7 +73,8 @@ class MarketInfo extends Component {
 MarketInfo.propTypes = {
 	getMarketInformation: PropTypes.func.isRequired,
 	getMarketNews: PropTypes.func.isRequired,
-	money: PropTypes.array.isRequired
+	money: PropTypes.array.isRequired,
+	news: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => ({
