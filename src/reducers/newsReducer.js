@@ -1,21 +1,20 @@
 /* ========================
-   REDUCER FOR THE MARKETS
+   REDUCER FOR MARKET NEWS
  ============================ */
 
-import { GET_ALL_INFORMATION } from '../actions/types';
+import { GET_FINANCIAL_NEWS } from '../actions/types';
 
 const initialState = {
-	money: []
+	news: []
 };
 
 export default function(state = initialState, action) {
 	switch (action.type) {
-		case GET_ALL_INFORMATION:
+		case GET_FINANCIAL_NEWS:
 			return {
 				...state,
-				money: action.payload
+				news: action.payload
 			};
-
 		default:
 			return state;
 	}

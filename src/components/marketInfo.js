@@ -10,21 +10,22 @@ import { ListGroup, ListGroupItem, Badge } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
 import getMarketInformation from '../actions/moneyAction';
+import getMarketNews from '../actions/newsAction';
 
 class MarketInfo extends Component {
-	componentDidMount() {
+	componentWillMount() {
 		this.props.getMarketInformation();
+		this.props.getMarketNews();
 	}
 	render() {
-		console.log(this.props.money);
-
+		console.log(this.props.news);
 		return (
 			<Container>
 				<Row>
 					<Col xs="6" sm="6">
-						{this.props.money.map((key) => {
+						{this.props.money.map(function(key, index) {
 							return (
-								<ListGroup>
+								<ListGroup key={index}>
 									<ListGroupItem className="justify-content-between">
 										Date <Badge pill>{key.date}</Badge>
 									</ListGroupItem>
@@ -45,7 +46,7 @@ class MarketInfo extends Component {
 						})}
 					</Col>
 					<Col xs="6" sm="6">
-						News Here
+						News
 					</Col>
 				</Row>
 			</Container>
@@ -55,11 +56,13 @@ class MarketInfo extends Component {
 
 MarketInfo.propTypes = {
 	getMarketInformation: PropTypes.func.isRequired,
+	getMarketNews: PropTypes.func.isRequired,
 	money: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => ({
-	money: state.money.money
+	money: state.money.money,
+	news: state.news.news
 });
 
-export default connect(mapStateToProps, { getMarketInformation })(MarketInfo);
+export default connect(mapStateToProps, { getMarketInformation, getMarketNews })(MarketInfo);
