@@ -3,6 +3,8 @@
 ===================== */
 
 import React from 'react';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -15,13 +17,9 @@ const Header = () => {
 								<h1>
 									<strong>MARKET / WIZ</strong>
 								</h1>
-								<input
-									type="text"
-									className="form-control"
-									placeholder="Search by Dish or Meal"
-									aria-label="Search by Dish or Meal"
-									aria-describedby="basic-addon2"
-								/>
+								<Link to="/markets">
+									<Button color="primary">Explore the Markets</Button>{' '}
+								</Link>
 							</div>
 						</div>
 					</div>

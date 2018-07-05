@@ -1,22 +1,21 @@
 /*
   ======================
-    MARKETS COMPONENT
+    MARKETS COMPONENT FOR LOSERS
   ======================
 */
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Footer from './Footer';
-import { Link } from 'react-router-dom';
-import moment from 'moment';
 import { connect } from 'react-redux';
-import getMarketInformation from '../actions/moneyAction';
+import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import moment from 'moment';
 import getMarketNews from '../actions/newsAction';
+import getNegativeStocks from '../actions/negativeStockAction';
 
-class MarketInfo extends Component {
+class NegativeStocks extends Component {
 	componentWillMount() {
-		this.props.getMarketInformation();
 		this.props.getMarketNews();
+		this.props.getNegativeStocks();
 	}
 	render() {
 		return (
@@ -36,15 +35,12 @@ class MarketInfo extends Component {
 				</Link>
 				<div className="row">
 					<div className="col-sm-6">
-						<h2 className="badge badge-secondary" style={{ fontSize: '1.5em' }}>
-							Top Gainers
-						</h2>
-						<Link to="/losers" style={{ textDecoration: 'none' }}>
-							<h2 className="badge badge-secondary" style={{ fontSize: '1.5em', marginLeft: '2em' }}>
-								Click here for Top Losers
+						<Link to="/markets" style={{ textDecoration: 'none' }}>
+							<h2 className="badge badge-secondary" style={{ fontSize: '1.5em' }}>
+								Top Gainers
 							</h2>
 						</Link>
-						{this.props.money.map(function(stock, item) {
+						{this.props.stocks.map(function(stock, item) {
 							return (
 								<ul className="list-group" style={{ marginTop: '2em', fontSize: '2em' }} key={item}>
 									<li className="list-group-item d-flex justify-content-between align-items-center ">
@@ -111,16 +107,16 @@ class MarketInfo extends Component {
 	}
 }
 
-MarketInfo.propTypes = {
-	getMarketInformation: PropTypes.func.isRequired,
+NegativeStocks.propTypes = {
 	getMarketNews: PropTypes.func.isRequired,
-	money: PropTypes.array.isRequired,
+	getNegativeStocks: PropTypes.func.isRequired,
+	stocks: PropTypes.array.isRequired,
 	news: PropTypes.array.isRequired
 };
 
 const mapStateToProps = (state) => ({
-	money: state.money.money,
+	stocks: state.stocks.stocks,
 	news: state.news.news
 });
 
-export default connect(mapStateToProps, { getMarketInformation, getMarketNews })(MarketInfo);
+export default connect(mapStateToProps, { getMarketNews, getNegativeStocks })(NegativeStocks);
