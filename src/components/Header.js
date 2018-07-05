@@ -8,24 +8,19 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
-		<header id="header">
-			<div className="intro">
-				<div className="overlay">
-					<div className="container">
-						<div className="row">
-							<div className="intro-text">
-								<h1>
-									<strong>MARKET / WIZ</strong>
-								</h1>
-								<Link to="/markets">
-									<Button color="primary">Explore the Markets</Button>{' '}
-								</Link>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		<div className="jumbotron overlay" style={{ background: 'white', height: '350px' }}>
+			<h1 className="display-4" style={{ fontWeight: '800' }}>
+				MRKETS
+			</h1>
+			<p className="lead">
+				Use this website to find the top and worst performing stocks on the Markets. Also catch up on some News
+			</p>
+			<Link to="/markets" style={{ textDecoration: 'none' }}>
+				<button type="button" className="btn btn-outline-primary btn-lg">
+					Learn More
+				</button>
+			</Link>
+		</div>
 	);
 };
 

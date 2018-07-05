@@ -9,35 +9,12 @@ import Footer from './Footer';
 
 const Landing = () => {
 	return (
-		<div id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-			<nav id="menu" className="navbar navbar-default navbar-fixed-top">
-				<div className="container">
-					<div className="navbar-header">
-						<button
-							type="button"
-							className="navbar-toggle collapsed"
-							data-toggle="collapse"
-							data-target="#bs-example-navbar-collapse-1"
-						>
-							{' '}
-							<span className="sr-only">Toggle navigation</span> <span className="icon-bar" />{' '}
-							<span className="icon-bar" /> <span className="icon-bar" />{' '}
-						</button>
-						<a className="navbar-brand page-scroll" href="#page-top">
-							MRKET WIZ
-						</a>{' '}
-					</div>
-					<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul className="nav navbar-nav navbar-right">
-							<li>
-								<a href="#about" className="page-scroll">
-									About
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+		<div
+			id="page-top"
+			data-spy="scroll"
+			data-target=".navbar-fixed-top"
+			style={{ height: '100vh', width: '100vw' }}
+		>
 			<Header />
 			<div id="about">
 				<div className="container">

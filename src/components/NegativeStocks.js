@@ -19,7 +19,7 @@ class NegativeStocks extends Component {
 	}
 	render() {
 		return (
-			<div class="container">
+			<div class="container" style={{ height: '100vh', width: '100vw' }}>
 				<Link to="/" style={{ textDecoration: 'none' }}>
 					<h1
 						style={{

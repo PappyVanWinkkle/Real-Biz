@@ -20,7 +20,7 @@ class MarketInfo extends Component {
 	}
 	render() {
 		return (
-			<div class="container">
+			<div className="container" style={{ height: '100vh', width: '100vw' }}>
 				<Link to="/" style={{ textDecoration: 'none' }}>
 					<h1
 						style={{
@@ -50,9 +50,11 @@ class MarketInfo extends Component {
 									<li className="list-group-item d-flex justify-content-between align-items-center ">
 										Symbol <span className="badge badge-primary badge-pill">{stock.symbol}</span>
 									</li>
+
 									<li className="list-group-item d-flex justify-content-between align-items-center active">
 										Name {stock.companyName}
 									</li>
+
 									<li className="list-group-item d-flex justify-content-between align-items-center">
 										Exchange
 										<span className="badge badge-primary badge-pill">{stock.primaryExchange}</span>
