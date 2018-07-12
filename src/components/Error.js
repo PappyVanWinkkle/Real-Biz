@@ -4,12 +4,21 @@
  *=================== */
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Errors = () => {
 	return (
-		<div style={{ position: 'absolute', left: '0', right: '0', zIndex: '-5' }}>
-			<h2>Bad Errors</h2>
+		<div>
+			<div className="row">
+				<div className="col-sm-12">
+					<div className="jumbotron jumbotron-fluid" style={{ height: '100vh', width: '100vw' }}>
+						<div className="container">
+							<h1 className="display-4" style={{ fontWeight: '800' }}>
+								404 Page Not Found
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
