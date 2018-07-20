@@ -25,4 +25,4 @@ Then npm start to start the development server on your machine
 You can also view the app on the Web. Application uses AWS-Mobile 
 and is therefore deployed to AWS Cloudfront and S3 
 
-[Mrkets](https://d3end2iqyx6osi.cloudfront.net)
+[Mrkets](https://realmrkets-hosting-mobilehub-33357174.s3-eu-west-1.amazonaws.com/)
